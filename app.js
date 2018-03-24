@@ -40,9 +40,6 @@ client.on('guildMemberRemove', member => {
     message.channel.sendMessage(`Pong! \`${Date.now() - message.createdTimestamp} ms\``);
   } else
 
-  if (message.content.startsWith(prefix + 'send')) {
-    client.channels.get('245491978601627648').sendMessage('Hello to the second channel!');
-  } else
 
   if (message.content.startsWith(prefix + 'setgame')) {
     if (!result) {
@@ -58,8 +55,5 @@ client.on('guildMemberRemove', member => {
     client.user.setStatus(result);
   } else
 
-  if (message.content.startsWith(prefix + 'foo')) {
-    message.channel.sendMessage('bar');
-  }
 });
  client.login(process.env.token);
