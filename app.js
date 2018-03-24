@@ -15,26 +15,6 @@ client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
-// client.on('',''=>{});
-
-client.on('guildDelete', guild => {
-  console.log(`I have left ${guild.name} at ${new Date()}`);
-});
-
-client.on('guildCreate', guild => {
-  guild.defaultChannel.sendMessage(`I have joined ${guild.name}`);
-});
-
-client.on('guildMemberAdd', member => {
-  let guild = member.guild;
-  guild.channels.get('418156939441340416').sendMessage(`Please welcome ${member.user.username} to the server!`);
-});
-
-client.on('guildMemberRemove', member => {
-  let guild = member.guild;
-  guild.channels.get('418156939441340416').sendMessage(`Please say goodbye to ${member.user.username} we will miss you!`);
-});
-
 
   if (message.content.startsWith(prefix + 'ping')) {
     message.channel.sendMessage(`Pong! \`${Date.now() - message.createdTimestamp} ms\``);
