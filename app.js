@@ -62,4 +62,4 @@ client.on('guildMemberRemove', member => {
     message.channel.sendMessage('bar');
   }
 });
- client.login("token");
+ client.login(token);
