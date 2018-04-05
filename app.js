@@ -8,8 +8,6 @@ client.on('ready', () => {
     console.log('Bot laoded.');
     client.user.setGame('Banan is Coding me!');
     client.user.setStatus('dnd');  //status : online : green , idle : orange , dnd : red
-  }
-);
 
 client.on('message', message => {
   if (message.author.bot) return;
