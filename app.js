@@ -35,5 +35,7 @@ client.on('message', message => {
     client.user.setStatus(result);
   } else
 
-});
+  }
+);
+    
  client.login(process.env.token);
